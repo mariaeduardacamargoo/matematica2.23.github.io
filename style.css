@@ -1,9 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
-
-.body{
+:root{
+--dragão:#8B0000
+--morcego:#F5FFFA
+--tubarão:#191970
+}
+body{
 font-family: "Ewert";
 }
-
-
-
 
