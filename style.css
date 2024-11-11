@@ -1,10 +1,53 @@
-@import url('https://fonts.googleapis.com/css2?family=Ewert&display=swap');
-:root{
---dragão:#8B0000
---morcego:#F5FFFA
---tubarão:#191970
-}
+
+@import url('https://fonts.googleapis.com/css2?family=Eater&display=swap');
 body{
-font-family: "Ewert";
+    fonte-familia:"Eater";
 }
 
+:root{
+    --dragão: #3461eb;
+    --amora: #731411;
+}
+
+.cabeçalho{
+    background-color: var(--amora);
+}
+
+.alunos{
+    background-color: var(--dragão);
+}
+
+.apresentação{
+    background-color: var(--amora);
+}
+
+.professores{
+    background-color: var(--dragão);
+}
+
+.avisos{
+    background-color: var(--amora);
+}
+
+.horario{
+    background-color: var(--dragão);
+}
+
+.rodape{
+    background-color: var(--dragão);
+}
+
+.tudo {
+    display: grid; 
+    grid-template-columns: 1fr 1fr 1fr; 
+    grid-template-rows: 1fr 0.9fr 1.1fr; 
+    gap: 0px 0px; 
+    grid-template-areas: 
+      "alunos professores professores"
+      "alunos avisos avisos"
+      "alunos horarios horarios"; 
+  }
+  .alunos { grid-area: alunos; }
+  .professores { grid-area: professores; }
+  .avisos { grid-area: avisos; }
+  .horarios { grid-area: horarios; }
